@@ -18,14 +18,18 @@
             android:orientation="vertical"
             android:padding="15dp">
 
-            <TextView
+            <EditText
+                android:id="@+id/team_a_name_id"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/arvo"
                 android:gravity="center"
                 android:padding="20dp"
                 android:text="@string/team_a_header"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:hint="@string/hint_a"
+                android:importantForAutofill="no"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -68,13 +72,17 @@
             android:orientation="vertical"
             android:padding="15dp">
 
-            <TextView
+            <EditText
+                android:id="@+id/team_b_name_id"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:text="@string/team_b_header"
                 android:gravity="center"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:hint="@string/hint_b"
+                android:importantForAutofill="no"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -122,6 +130,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/reset"
+            android:layout_margin="10dp"
+            style="@style/resetBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_margin="10dp"
+            style="@style/resetBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display"
             android:layout_margin="10dp"
             style="@style/resetBtn"/>
     </LinearLayout>
