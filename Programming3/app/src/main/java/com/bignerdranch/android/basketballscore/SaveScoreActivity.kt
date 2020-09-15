@@ -83,7 +83,7 @@ class SaveScoreActivity : AppCompatActivity() {
     // Use companion object to create Intents and access functions without class instances
     companion object {
 
-        fun newItent(
+        fun newIntent(
             packageContext: Context,
             team_a_name: String,
             team_b_name: String,
