@@ -11,5 +11,8 @@
     <string name="back">Go Back</string>
     <string name="confirm_message">Are you sure you want to save this game?</string>
     <string name="content_desc">Cartoon image of a basketball</string>
+    <string name="txtHint">Text</string>
+    <string name="hint_a">Customize name for Team A</string>
+    <string name="hint_b">Customize name for Team B</string>
 
 </resources>

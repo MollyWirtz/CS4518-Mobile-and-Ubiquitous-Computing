@@ -8,8 +8,8 @@ private const val TAG = "ScoreViewModel"
 class ScoreViewModel: ViewModel() {
 
     // Initialize scores
-    val teamA = TeamA(0)
-    val teamB = TeamB(0)
+    val teamA = TeamA("Team A", 0)
+    val teamB = TeamB("Team B", 0)
 
     // Method to increase score
     fun addScore(score: Int, team: Char) {
