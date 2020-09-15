@@ -124,6 +124,22 @@
             android:text="@string/reset"
             android:layout_margin="10dp"
             style="@style/resetBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_margin="10dp"
+            style="@style/resetBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display"
+            android:layout_margin="10dp"
+            style="@style/resetBtn"/>
     </LinearLayout>
 
 </LinearLayout>
