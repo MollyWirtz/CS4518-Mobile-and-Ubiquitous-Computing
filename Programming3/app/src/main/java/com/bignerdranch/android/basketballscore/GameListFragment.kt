@@ -33,7 +33,6 @@ class GameListFragment: Fragment() {
         gameRecyclerView.layoutManager = LinearLayoutManager(context)
 
         updateUI()
-
         return view
     }
 
@@ -53,7 +52,7 @@ class GameListFragment: Fragment() {
         fun bind(game: Game) {
             this.game = game
             indexTextView.text = game.index
-            dateTextView.text = game.date.toString()
+            dateTextView.text = game.date
             teamsTextView.text = game.teamNames
             scoreTextView.text = game.teamScores
         }
