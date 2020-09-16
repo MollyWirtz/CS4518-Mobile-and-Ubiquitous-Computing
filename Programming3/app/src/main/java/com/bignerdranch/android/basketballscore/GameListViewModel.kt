@@ -9,11 +9,9 @@ class GameListViewModel : ViewModel() {
     init{
         for (i in 0 until 100) {
             val game = Game()
-            game.index = i
-            game.teamA.name = getRandomName()
-            game.teamB.name = getRandomName()
-            game.teamA.score = getRandomScore()
-            game.teamB.score = getRandomScore()
+            game.index = "#$i"
+            game.teamNames = "${getRandomName()} vs ${getRandomName()}"
+            game.teamScores = "${getRandomScore()} vs ${getRandomScore()}"
 
             games += game
         }
