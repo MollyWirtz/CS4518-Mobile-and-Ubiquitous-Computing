@@ -84,11 +84,14 @@ class SaveScoreActivity : AppCompatActivity() {
     companion object {
 
         fun newIntent(
+
             packageContext: Context,
             team_a_name: String,
             team_b_name: String,
             team_a_score: Int,
             team_b_score: Int): Intent {
+            Log.d(TAG, "New intent in save")
+
             return Intent(packageContext, SaveScoreActivity::class.java).apply {
                 putExtra(EXTRA_TEAM_A_NAME, team_a_name)
                 putExtra(EXTRA_TEAM_B_NAME, team_b_name)

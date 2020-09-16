@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProviders
 private const val TEAM_A = "teamA"
 private const val TEAM_B = "teamB"
 private const val REQUEST_CODE_SAVE = 0
+private const val REQUEST_CODE_DISPLAY = 1
 private const val TAG = "MainFragment"
 
 
@@ -31,6 +32,7 @@ class MainFragment: Fragment() {
     private lateinit var freeThrowBtnB: Button
     private lateinit var resetBtn: Button
     private lateinit var saveBtn: Button
+    private lateinit var displayBtn: Button
     private lateinit var scoreA: TextView
     private lateinit var scoreB: TextView
     private lateinit var teamAName: TextView
@@ -68,6 +70,7 @@ class MainFragment: Fragment() {
         freeThrowBtnB = view.findViewById(R.id.free_throw_b)
         resetBtn = view.findViewById(R.id.reset)
         saveBtn = view.findViewById(R.id.save)
+        displayBtn = view.findViewById(R.id.display)
         scoreA = view.findViewById(R.id.score_a)
         scoreB = view.findViewById(R.id.score_b)
         teamAName = view.findViewById(R.id.team_a_name_id)
@@ -122,6 +125,11 @@ class MainFragment: Fragment() {
 
             // Start SaveScoreActivity
             startActivityForResult(intent, REQUEST_CODE_SAVE)
+        }
+        displayBtn.setOnClickListener{
+            // Create intent
+            val intent = GameListActivity.newIntent(getActivity() as Activity)
+            startActivityForResult(intent, REQUEST_CODE_DISPLAY)
         }
 
         return view
